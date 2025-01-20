@@ -1,0 +1,4 @@
+*.o
+buildcodes.h
+ripmime
+ripOLE/ripole

@@ -1778,7 +1778,7 @@ int MIMEH_parse_header_parameter( struct MIMEH_header_info *hinfo,  char *data, 
                         char *string_end;
 
                         DMIMEH LOGGER_log("%s:%d:MIMEH_parse_header_parameter:DEBUG: Using NON-quoted-string tests",FL);
-                        string_end = strpbrk(string,"; \n\r\t");
+                        string_end = strpbrk(string,";\n\r\t");
                         if (string_end != NULL)
                         {
                             *string_end = '\0';
